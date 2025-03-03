@@ -1,6 +1,7 @@
-git clone REPO_LINK         # Repoyu bilgisayarına indir
-mkdir yeni-klasor           # Klasör oluştur
-touch yeni-klasor/.gitkeep  # Boş dosya ekle (klasörü korur)
-git add yeni-klasor         # Değişiklikleri ekle
-git commit -m "yeni klasör"
-git push                    # GitHub'a gönder
+from transformers import pipeline
+
+def run():
+    model = pipeline("sentiment-analysis")
+    text = input("Metin girin: ")
+    result = model(text)[0]
+    print(f"Duygu: {result['label']}, Skor: {result['score']:.2f}")
