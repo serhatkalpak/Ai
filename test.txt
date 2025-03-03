@@ -1,7 +1,14 @@
 termux-ai-tool/
 ├── main.py
-├── web_analyzer.py
-├── sentiment_analysis.py
-├── music_generator.py
-├── ...
-└── requirements.txt
+├── web_analizi.py
+├── duygu_analizi.py
+├── muzik_olustur.py
+├── doviz_analiz.py
+├── urun_karsilastir.py
+├── resim_olustur.py
+├── mac_tahmin.py
+├── konum_bul.py
+├── siir_yaz.py
+├── kitap_yaz.py
+├── requirements.txt
+└── kurulum.sh
