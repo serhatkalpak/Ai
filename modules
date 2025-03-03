@@ -1,6 +1,1 @@
-git clone REPO_LINK         # Repoyu bilgisayarına indir
-mkdir yeni-klasor           # Klasör oluştur
-touch yeni-klasor/.gitkeep  # Boş dosya ekle (klasörü korur)
-git add yeni-klasor         # Değişiklikleri ekle
-git commit -m "yeni klasör"
-git push                    # GitHub'a gönder
+l
