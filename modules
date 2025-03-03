@@ -1,0 +1,2 @@
+mkdir modules
+   touch modules/.gitkeep  # Boş klasör için .gitkeep dosyası
