@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+transformers
+torch
+yfinance
+pillow
+midiutil
+scikit-learn
+geopy
