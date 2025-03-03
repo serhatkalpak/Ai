@@ -1,0 +1,7 @@
+termux-ai-tool/
+├── main.py
+├── web_analyzer.py
+├── sentiment_analysis.py
+├── music_generator.py
+├── ...
+└── requirements.txt
