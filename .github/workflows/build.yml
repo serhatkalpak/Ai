@@ -21,18 +21,20 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         
-    # Gradle'ı otomatik kur ve wrapper oluştur
+    # KRİTİK DÜZELTME: Gradle sürümünü 8.4'e sabitliyoruz
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v3
-      
-    # gradlew dosyasını otomatik oluştur
+      with:
+        gradle-version: 8.4
+        
     - name: Generate Gradle Wrapper
+      # Artık bu komut güvenli bir şekilde Gradle 8.4 ile çalışacak
       run: gradle wrapper --gradle-version 8.4
       
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
       
-    - name: Build with Gradle
+    - name: Build with Gradle (Check)
       run: ./gradlew build --no-daemon
       
     - name: Build Debug APK
